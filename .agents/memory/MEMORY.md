@@ -1,0 +1,1 @@
+- [Todawat property claims](todawat-property-claims.md) — confirm approvals, prices, and availability for each listing before publishing them.

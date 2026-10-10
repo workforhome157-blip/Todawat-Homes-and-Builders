@@ -1,6 +1,6 @@
-# [Project name]
+# Todawat Homes & Builders
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A responsive Jaipur real-estate showcase for Todawat Homes & Builders, with direct WhatsApp and Instagram enquiries.
 
 ## Run & Operate
 
@@ -22,15 +22,19 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/todawat-builders/src/App.tsx` — the one-page marketing site and enquiry links
+- `artifacts/todawat-builders/src/index.css` — site styling, motion, and responsive behavior
+- `artifacts/todawat-builders/public/brand/` — supplied logo and property/interior photos
+- `artifacts/todawat-builders/index.html` — title, sharing metadata, and favicon
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first release is a static one-page site; enquiries go directly to WhatsApp and Instagram, with no server-side listing inventory.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Showcases the supplied Jaipur villa and interior photography.
+- Helps visitors find property categories and contact the business about current listings.
 
 ## User preferences
 

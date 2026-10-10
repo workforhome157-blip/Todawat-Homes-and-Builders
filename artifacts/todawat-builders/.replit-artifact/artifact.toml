@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Todawat Homes & Builders"
+description = "A premium Jaipur real-estate showcase for Todawat Homes & Builders, featuring supplied villa and interior photography, inquiry-led property highlights, and direct WhatsApp contact."
+version = "1.0.0"
+id = "artifacts/todawat-builders"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21069
+
+[services.development]
+run = "pnpm --filter @workspace/todawat-builders run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/todawat-builders", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/todawat-builders/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21069"
+BASE_PATH = "/"
