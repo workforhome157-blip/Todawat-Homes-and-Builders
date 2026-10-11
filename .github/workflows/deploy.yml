@@ -42,6 +42,8 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build website
+        env:
+          PORT: 3000
         run: |
           cd artifacts/todawat-builders
           pnpm run build -- --base=/Todawat-Homes-and-Builders/
