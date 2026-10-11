@@ -44,9 +44,12 @@ jobs:
       - name: Build website
         env:
           PORT: 3000
+          BASE_PATH: /
+    Todawat-Homes-and-Builders/
         run: |
           cd artifacts/todawat-builders
-          pnpm run build -- --base=/Todawat-Homes-and-Builders/
+          pnpm run build -- --base=/
+     Todawat-Homes-and-Builders/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
